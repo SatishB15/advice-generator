@@ -31,10 +31,10 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop View
-![](./screenshot.jpg)
+![](./screenshot-desktop.png)
 
 #### Mobile View
-![](./screenshot.jpg)
+![](./screenshot-mobile.png)
 
 
 ### Links
