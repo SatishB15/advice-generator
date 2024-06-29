@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,8 @@
   <meta property="og:title" content="Advice generator App by Satish Birhade">
   <meta property="og:description"
     content="Completed the 'Advice generator App' challenge by Frontend Mentor. This project showcases a responsive card component built with HTML, CSS, and use of REST API's using JavaScript.">
-  <meta property="og:image" content="https://stats-section.vercel.app/design/desktop-design.jpg">
-  <meta property="og:url" content="https://stats-section.vercel.app/">
+  <meta property="og:image" content="https://advice-generator-silk-pi.vercel.app/design/desktop-design.jpg">
+  <meta property="og:url" content="https://advice-generator-silk-pi.vercel.app">
   <meta property="og:type" content="website">
 
   <!-- Twitter Card Meta Tags -->
@@ -25,24 +26,44 @@
   <meta name="twitter:title" content="Advice generator App by Satish Birhade">
   <meta name="twitter:description"
     content="Completed the 'Advice generator App' challenge by Frontend Mentor. This project showcases a responsive card component built with HTML, CSS, and use of REST API's using JavaScript.">
-  <meta name="twitter:image" content="https://stats-section.vercel.app/design/desktop-design.jpg">
+  <meta name="twitter:image" content="https://advice-generator-silk-pi.vercel.app/design/desktop-design.jpg">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Advice generator app</title>
 </head>
+
 <body>
-<main>
-
-</main>
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
+  <main>
+    <div class="container">
+      <p class="advice-id">
+        Advice # <span id="advice-id">117</span>
+      </p>
+      <div class="advice">
+        <q id="advice">
+          it is easy to sit up and take notice.
+          what's difficult is getting up and taking action.
+        </q>
+      </div>
+      <div class="seperator">
+        <div class="line"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="line"></div>
+      </div>
+      <button onclick="generateAdvice()" type="button">
+        <img src="./images/icon-dice.svg" alt="dice-icon">
+      </button>
+    </div>
+  </main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.linkedin.com/in/satish-birhade" target="_blank">Satish Birhade</a>.
   </div>
-  <script src="script.js" type="javascript"></script>
+  <script src="./script.js"></script>
 </body>
+
 </html>
