@@ -29,9 +29,9 @@ body {
 .container {
     width: 90%;
     margin: auto;
-    max-width: 600px;
+    max-width: 620px;
     text-align: center;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 1rem;
     position: relative;
     background-color: var(--color-dark-grayish-blue);
@@ -40,6 +40,8 @@ body {
 .advice-id {
     color: var(--color-green);
     margin-bottom: 2rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
 }
 
 .advice {
@@ -75,17 +77,17 @@ button {
     border-radius: 50%;
     background-color: var(--color-green);
     display: flex;
-    width: 3rem;
+    width: 2.5rem;
     cursor: pointer;
     pointer-events: all;
-    height: 3rem;
+    height: 2.5rem;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     border: none;
     outline: none;
     position: absolute;
-    bottom: -15%;
+    bottom: -13%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
