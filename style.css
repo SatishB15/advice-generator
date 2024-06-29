@@ -26,7 +26,7 @@ body {
     background-color: var(--color-dark-blue);
 }
 
-.container{
+.container {
     width: 90%;
     margin: auto;
     max-width: 600px;
@@ -37,7 +37,7 @@ body {
     background-color: var(--color-dark-grayish-blue);
 }
 
-.advice-id{
+.advice-id {
     color: var(--color-green);
     margin-bottom: 2rem;
 }
@@ -51,27 +51,27 @@ body {
     margin-bottom: 2rem;
 }
 
-.seperator{
+.seperator {
     display: flex;
     align-items: center;
     gap: 6px;
     margin-bottom: 2rem;
 }
 
-.line{
+.line {
     height: 0.5px;
     width: 100%;
     background-color: var(--color-cyan);
 }
 
-.box{
+.box {
     height: 1rem;
     width: 0.8rem;
     border-radius: 4px;
     background-color: var(--color-cyan);
 }
 
-button{
+button {
     border-radius: 50%;
     background-color: var(--color-green);
     display: flex;
@@ -88,6 +88,10 @@ button{
     bottom: -15%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+button:hover {
+    box-shadow: 0 0 2rem 0.25rem rgba(82, 255, 168, 0.5);
 }
 
 .attribution {

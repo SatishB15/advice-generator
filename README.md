@@ -51,20 +51,56 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- REST API
+- Fetch native API and data fetching
 
 ### What I learned
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
+<div class="seperator">
+<div class="line"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="line"></div>
+</div>
 ```
 ```css
 .proud-of-this-css {
-  color: papayawhip;
+    border-radius: 50%;
+    background-color: var(--color-green);
+    display: flex;
+    width: 3rem;
+    cursor: pointer;
+    pointer-events: all;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 ```
 ```js
 const proudOfThisFunc = () => {
-  console.log('🎉')
+  fetch('https://api.adviceslip.com/advice')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.getElementById('advice-id').textContent = data.slip.id;
+            document.getElementById('advice').textContent = data.slip.advice;
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
 }
 ```
 
