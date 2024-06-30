@@ -31,7 +31,7 @@ body {
     margin: auto;
     max-width: 620px;
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 1rem;
     position: relative;
     background-color: var(--color-dark-grayish-blue);
@@ -39,8 +39,9 @@ body {
 
 .advice-id {
     color: var(--color-green);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     letter-spacing: 0.25rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
 }
 
@@ -50,20 +51,20 @@ body {
     font-weight: 800;
     font-style: normal;
     color: var(--color-cyan);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .seperator {
     display: flex;
     align-items: center;
     gap: 6px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .line {
     height: 0.5px;
     width: 100%;
-    background-color: var(--color-cyan);
+    background-color: var(--color-grayish-blue);
 }
 
 .box {
@@ -77,19 +78,25 @@ button {
     border-radius: 50%;
     background-color: var(--color-green);
     display: flex;
-    width: 2.5rem;
+    width: 3.5rem;
     cursor: pointer;
     pointer-events: all;
-    height: 2.5rem;
+    height: 3.5rem;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     border: none;
     outline: none;
     position: absolute;
-    bottom: -13%;
+    bottom: -19%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width:576px){
+    button{
+        bottom: -14% !important;
+    }
 }
 
 button:hover {
