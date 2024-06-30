@@ -39,7 +39,7 @@ body {
 
 .advice-id {
     color: var(--color-green);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     letter-spacing: 0.25rem;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -51,7 +51,7 @@ body {
     font-weight: 800;
     font-style: normal;
     color: var(--color-cyan);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .seperator {
@@ -88,7 +88,7 @@ button {
     border: none;
     outline: none;
     position: absolute;
-    bottom: -19%;
+    bottom: -18%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
